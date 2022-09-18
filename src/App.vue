@@ -1,5 +1,10 @@
 <template>
-  <About />
+  <div class="flex">
+    <Menu />
+    <About />
+  </div>
+
+  <div class="bg"></div>
 </template>
 
 <script setup>
@@ -7,6 +12,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue';
 import About from './components/About.vue';
+import Menu from './components/Menu.vue';
 // import * as TagCloud from 'TagCloud';
 // import { onMounted } from 'vue';
 
