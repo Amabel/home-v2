@@ -1,7 +1,7 @@
 <template>
   <a href="https://github.com/Amabel" target="_blank">
     <img
-      class="avatar m-6 w-36 rounded-full border-[#C3F8FF] hover:animate-spin cursor-pointer"
+      class="avatar m-6 w-36 h-36 rounded-full border-[#C3F8FF] hover:animate-spin cursor-pointer"
       src="https://avatars.githubusercontent.com/u/12688422?v=4"
       alt="avatar"
     />
