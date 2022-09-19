@@ -84,7 +84,13 @@ const toggleSubmenu = (open) => {
   submenuActive.value = open;
 };
 
-const closeDropdown = () => {
+const closeDropdown = (event) => {
+  // NOTE: 点击menu按钮的情况除外，否则会导致多次触发
+  const className = event.target.className;
+  if (className && className.includes('hamburger-area')) {
+    return;
+  }
+
   submenuActive.value = false;
 };
 </script>

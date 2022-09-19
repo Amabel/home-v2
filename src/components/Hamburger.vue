@@ -1,13 +1,13 @@
 <template>
-  <div class="container">
+  <div class="container hamburger-area">
     <div
-      class="btn"
+      class="btn hamburger-area"
       :class="{ active: active, 'not-active': !active }"
       @click="toggleActive"
     >
-      <span></span>
-      <span></span>
-      <span></span>
+      <span class="hamburger-area"></span>
+      <span class="hamburger-area"></span>
+      <span class="hamburger-area"></span>
     </div>
   </div>
 </template>
