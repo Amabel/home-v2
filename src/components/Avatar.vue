@@ -1,22 +1,20 @@
 <template>
   <a href="https://github.com/Amabel" target="_blank">
     <img
-      class="avatar m-6 w-36 h-36 rounded-full border-[#C3F8FF] hover:animate-spin cursor-pointer"
+      class="avatar md:m-6 w-12 md:w-36 h-12 md:h-36 rounded-full border-2 md:border-4 border-[#7fbcd2] cursor-pointer"
       src="https://avatars.githubusercontent.com/u/12688422?v=4"
       alt="avatar"
     />
   </a>
-  <div class="text-xl font-bold">Amabel</div>
-  <div>Software Engineer</div>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps({
+  size: String,
+});
+</script>
 
 <style scoped>
-.avatar {
-  border: 4px solid #7fbcd2;
-}
-
 .avatar:hover {
   animation: pulse 2s infinite;
 }

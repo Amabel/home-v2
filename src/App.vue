@@ -1,7 +1,8 @@
 <template>
   <Menu />
+  <TopMenu />
 
-  <div class="flex flex-col ml-64 w-full">
+  <div class="flex flex-col md:ml-64 mt-16 md:mt-0 w-full">
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section"><About /></div>
       <div class="section"><Skills /></div>
@@ -19,6 +20,7 @@ import Menu from './components/Menu.vue';
 import Skills from './components/Skills.vue';
 import Work from './components/Work.vue';
 import Activity from './components/Activity.vue';
+import TopMenu from './components/TopMenu.vue';
 
 const options = {
   licenseKey: 'YOUR_KEY_HEERE',

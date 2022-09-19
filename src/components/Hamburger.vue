@@ -3,7 +3,7 @@
     <div
       class="btn"
       :class="{ active: active, 'not-active': !active }"
-      @click="active = !active"
+      @click="toggleActive"
     >
       <span></span>
       <span></span>
@@ -16,6 +16,12 @@
 import { ref } from '@vue/reactivity';
 
 const active = ref(false);
+const emit = defineEmits(['toggle-active']);
+
+const toggleActive = () => {
+  active.value = !active.value;
+  emit('toggle-active', active.value);
+};
 </script>
 
 <style scoped>
