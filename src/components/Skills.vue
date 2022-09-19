@@ -1,17 +1,34 @@
 <template>
-  <div class="flex flex-col justify-center p-12 w-full h-screen">
+  <div
+    class="flex flex-col justify-center p-12 w-full h-[calc(100%-4rem)] md:h-screen"
+  >
     <RubberBandHeader text="Skills" />
 
     <div
-      class="flex pt-4 text-base md:text-lg animate__animated animate__fadeInUp"
+      class="flex flex-col md:flex-row md:justify-between pt-4 text-base md:text-lg animate__animated animate__fadeInUp"
     >
       <div class="left">
-        <div>Software Engineering</div>
-        <div>Programming</div>
+        <div class="text-xl font-bold">Software Engineering</div>
+        <div>
+          Communication, Teamwork, Problem-solving, Agile software development,
+          DevOps, CI/CD, Software architecture design, Databse design, System
+          monitoring.
+        </div>
+
+        <div class="mt-4 text-xl font-bold">Programming</div>
+        <div>Frontend: Angular, Vue.js, React, TypeScript</div>
+        <div>Backend: Ruby on Rails, Node.js, Go</div>
+        <div>Database: MySQL, Redis, PostgreSQL</div>
+        <div>Cloud: AWS, GCP, Firebase</div>
+
+        <div class="mt-4 text-xl font-bold">Language</div>
+        <div>
+          Chinese (native), Japanese (conversational), English (conversational)
+        </div>
       </div>
 
-      <div class="right ml-64">
-        <div id="tagcloud"></div>
+      <div class="right">
+        <div id="tagcloud" class="tagcloud hidden md:block"></div>
       </div>
     </div>
   </div>
@@ -22,26 +39,26 @@ import RubberBandHeader from './RubberBandHeader.vue';
 import * as TagCloud from 'TagCloud';
 import { onMounted } from 'vue';
 
-let tags = [
-  { tagName: 'js', count: 5 },
-  { tagName: 'css', count: 9 },
-  { tagName: 'less', count: 13 },
-  { tagName: 'rest', count: 2 },
-];
-
 const container = '#tagcloud';
 const texts = [
-  '3D',
-  'TagCloud',
+  'TypeScript',
   'JavaScript',
-  'CSS3',
-  'Animation',
-  'Interactive',
-  'Mouse',
-  'Rolling',
-  'Sphere',
-  '6KB',
-  'v2.x',
+  'Angular',
+  'RxJS',
+  'Ruby',
+  'Ruby on Rails',
+  'Vue.js',
+  'React',
+  'Node.js',
+  'Go',
+  'Python',
+  'MySQL',
+  'Redis',
+  'AWS',
+  'Docker',
+  'Git',
+  'Datadog',
+  'Firebase',
 ];
 const options = {
   radius: 240,
@@ -53,13 +70,13 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.right {
+.tagcloud {
   background: rgba(0, 0, 0, 0.22);
   border-radius: 50%;
 }
 
 :deep() .tagcloud--item {
   color: #c3f8ff;
-  font-weight: bolder;
+  font-weight: bold;
 }
 </style>
