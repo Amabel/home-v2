@@ -6,7 +6,7 @@
     <div class="flex flex-col">
       <RubberBandHeader text="Skills" />
       <div
-        class="flex flex-col pt-4 text-base md:text-lg animate__animated animate__fadeInUp"
+        class="flex flex-col mt-4 md:mt-8 text-base md:text-lg animate__animated animate__fadeInUp"
       >
         <div class="text-xl font-bold">Software Engineering</div>
         <div>

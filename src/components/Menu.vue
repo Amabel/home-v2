@@ -5,7 +5,7 @@
       <div class="text-xl font-bold">Amabel</div>
       <div>Software Engineer</div>
 
-      <nav id="menu" class="mt-32">
+      <nav id="menu" class="mt-16">
         <div class="nav-item">
           <span class="link-text" data-menuanchor="about"
             ><a href="#about">About</a></span
@@ -28,7 +28,7 @@
         </div>
       </nav>
 
-      <div class="mt-16">
+      <div class="mt-8">
         <ThemeToggle />
       </div>
 
