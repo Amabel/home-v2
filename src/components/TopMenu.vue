@@ -39,10 +39,14 @@
         </svg>
       </a>
       <div class="ml-4">
-        <Hamburger @toggle-active="toggleSubmenu" />
+        <Hamburger :active="submenuActive" @toggle-active="toggleSubmenu" />
       </div>
 
-      <div class="dropdown" :class="{ inactive: !submenuActive }">
+      <div
+        class="dropdown"
+        :class="{ inactive: !submenuActive }"
+        v-click-outside="closeDropdown"
+      >
         <nav id="menu">
           <div class="nav-item">
             <span class="link-text" data-menuanchor="about"
@@ -78,6 +82,10 @@ import Hamburger from './Hamburger.vue';
 const submenuActive = ref(false);
 const toggleSubmenu = (open) => {
   submenuActive.value = open;
+};
+
+const closeDropdown = () => {
+  submenuActive.value = false;
 };
 </script>
 

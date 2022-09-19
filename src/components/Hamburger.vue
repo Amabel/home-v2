@@ -13,14 +13,14 @@
 </template>
 
 <script setup>
-import { ref } from '@vue/reactivity';
+const props = defineProps({
+  active: Boolean,
+});
 
-const active = ref(false);
 const emit = defineEmits(['toggle-active']);
 
 const toggleActive = () => {
-  active.value = !active.value;
-  emit('toggle-active', active.value);
+  emit('toggle-active', !props.active);
 };
 </script>
 
