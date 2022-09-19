@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-8 w-64 flex flex-col items-center">
+  <div class="nav inline-flex flex-col items-center pt-8 w-64 h-screen">
     <Avatar />
 
     <nav class="mt-32">
@@ -49,6 +49,10 @@ import Avatar from './Avatar.vue';
 </script>
 
 <style scoped>
+.nav {
+  position: fixed;
+}
+
 .nav-item {
   @apply p-4 text-lg font-extrabold cursor-pointer;
 }
