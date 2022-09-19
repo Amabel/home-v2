@@ -2,8 +2,15 @@
   <Menu />
   <TopMenu />
 
-  <div class="flex flex-col md:ml-64 mt-16 md:mt-0 w-full">
-    <full-page ref="fullpage" :options="options" id="fullpage">
+  <div
+    class="flex flex-col items-center md:ml-64 mt-16 md:mt-0 md:w-[calc(100%-16rem)]"
+  >
+    <full-page
+      ref="fullpage"
+      :options="options"
+      id="fullpage"
+      class="w-full max-w-7xl"
+    >
       <div class="section"><About /></div>
       <div class="section"><Skills /></div>
       <div class="section"><Work /></div>

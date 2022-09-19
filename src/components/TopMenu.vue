@@ -94,7 +94,7 @@ const closeDropdown = () => {
   position: fixed;
   top: 0;
   left: 0;
-  background: black;
+  background: #141521;
   z-index: 10;
 }
 

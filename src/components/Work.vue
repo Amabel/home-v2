@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col justify-center p-12 w-full h-screen">
+  <div
+    class="flex flex-col justify-center p-12 w-full h-[calc(100%-4rem)] md:h-scree"
+  >
     <RubberBandHeader text="Work" />
 
     <div

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="main w-full h-screen inline-flex items-center"
+    class="main inline-flex items-center w-full h-[calc(100%-4rem)] md:h-scree"
     @mousemove="updateBgPosition"
   >
     <div class="flex flex-col p-12">
