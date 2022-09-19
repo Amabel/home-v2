@@ -28,6 +28,10 @@
         </div>
       </nav>
 
+      <div class="mt-16">
+        <ThemeToggle />
+      </div>
+
       <div class="footer flex justify-center items-center px-8 mt-auto w-full">
         <a href="https://github.com/Amabel" target="_blank">
           <svg
@@ -67,6 +71,7 @@
 
 <script setup>
 import Avatar from './Avatar.vue';
+import ThemeToggle from './ThemeToggle.vue';
 </script>
 
 <style scoped>

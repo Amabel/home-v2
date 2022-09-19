@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col justify-center p-12 w-full h-[calc(100%-4rem)] md:h-scree"
+    class="flex flex-col justify-center p-12 w-full h-[calc(100%-4rem)] md:h-screen"
   >
     <RubberBandHeader text="Timeline" />
 

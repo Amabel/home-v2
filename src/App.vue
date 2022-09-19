@@ -22,13 +22,14 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue';
+import { ref, reactive, watch } from 'vue';
 import About from './components/About.vue';
 import Menu from './components/Menu.vue';
 import Skills from './components/Skills.vue';
 import Timeline from './components/Timeline.vue';
 import Activity from './components/Activity.vue';
 import TopMenu from './components/TopMenu.vue';
+import { darkMode } from './store';
 
 const options = {
   licenseKey: 'YOUR_KEY_HEERE',
@@ -56,6 +57,12 @@ const updateBgPosition = (event) => {
   bgPosition.x = `${width * pageX * -1 - 50}px`;
   bgPosition.y = `${height * pageY * -1}px`;
 };
+
+// Dark mode
+const bgFilter = ref('grayscale(78%) blur(0px) brightness(50%)');
+watch(darkMode, (d) => {
+  bgFilter.value = d ? 'grayscale(78%) blur(0px) brightness(50%)' : 'none';
+});
 </script>
 
 <style scoped>
@@ -70,7 +77,8 @@ const updateBgPosition = (event) => {
   background-size: cover;
   background-position-x: v-bind('bgPosition.x');
   background-position-y: v-bind('bgPosition.y');
-  filter: grayscale(78%) blur(0px) brightness(50%);
+  filter: v-bind(bgFilter);
+  transition: filter 2s;
   z-index: -1;
 }
 </style>
