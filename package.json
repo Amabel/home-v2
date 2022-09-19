@@ -11,7 +11,8 @@
   "dependencies": {
     "TagCloud": "^2.2.0",
     "animate.css": "^4.1.1",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-fullpage.js": "^0.2.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",

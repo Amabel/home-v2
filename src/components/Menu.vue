@@ -2,11 +2,27 @@
   <div class="nav inline-flex flex-col items-center pt-8 w-64 h-screen">
     <Avatar />
 
-    <nav class="mt-32">
-      <div class="nav-item"><span class="link-text">About</span></div>
-      <div class="nav-item"><span class="link-text">Skills</span></div>
-      <div class="nav-item"><span class="link-text">Work</span></div>
-      <div class="nav-item"><span class="link-text">Activity</span></div>
+    <nav id="menu" class="mt-32">
+      <div class="nav-item">
+        <span class="link-text" data-menuanchor="about"
+          ><a href="#about">About</a></span
+        >
+      </div>
+      <div class="nav-item">
+        <span class="link-text" data-menuanchor="skills"
+          ><a href="#skills">Skills</a></span
+        >
+      </div>
+      <div class="nav-item">
+        <span class="link-text" data-menuanchor="work"
+          ><a href="#work">Work</a></span
+        >
+      </div>
+      <div class="nav-item">
+        <span class="link-text" data-menuanchor="activity"
+          ><a href="#activity">Activity</a></span
+        >
+      </div>
     </nav>
 
     <div class="footer flex justify-center items-center px-8 mt-48 w-full">
@@ -69,7 +85,12 @@ import Avatar from './Avatar.vue';
   text-decoration: none;
 }
 
-.link-text:before {
+.link-text.active {
+  color: #c3f8ff;
+  -webkit-text-fill-color: unset;
+}
+
+.link-text::before {
   content: '';
   position: absolute;
   width: 100%;
