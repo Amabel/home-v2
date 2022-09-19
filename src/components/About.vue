@@ -1,20 +1,10 @@
 <template>
-  <div class="main h-screen flex items-center" @mousemove="updateBgPosition">
+  <div
+    class="main w-full h-screen flex items-center"
+    @mousemove="updateBgPosition"
+  >
     <div class="flex flex-col p-12">
-      <div class="flex flex-row">
-        <div v-for="(charMap, index) in headerCharsMap" :key="index">
-          <div
-            class="header-chars text-4xl md:text-6xl font-black text-[#C3F8FF]"
-            :class="{
-              'animate__animated animate__rubberBand': charMap.animating,
-            }"
-            ref="headerCharRefs"
-            @mouseenter="animateRubberBand($event, index)"
-          >
-            {{ charMap.char === ' ' ? '&nbsp;' : charMap.char }}
-          </div>
-        </div>
-      </div>
+      <RubberBandHeader text="About Amabel" />
       <p class="pt-4 text-base md:text-lg animate__animated animate__fadeInUp">
         Fullstack engineer.
       </p>
@@ -24,6 +14,7 @@
 
 <script setup>
 import { ref, reactive } from 'vue';
+import RubberBandHeader from './RubberBandHeader.vue';
 
 // Reactive background image
 const movementStrength = 20;
@@ -79,9 +70,5 @@ const animateRubberBand = ($event, refIndex) => {
   background-position-y: v-bind('bgPosition.y');
   filter: grayscale(72%) blur(0px);
   z-index: -1;
-}
-
-.header-chars {
-  /* @apply text-4xl font-black text-[#C3F8FF]; */
 }
 </style>
