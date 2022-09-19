@@ -1,18 +1,17 @@
 <template>
   <div
-    class="flex flex-col justify-center p-12 w-full h-[calc(100%-4rem)] md:h-screen"
+    class="flex justify-center items-center p-12 w-full h-[calc(100%-4rem)] md:h-screen"
   >
-    <RubberBandHeader text="Skills" />
-
-    <div
-      class="flex flex-col md:flex-row md:justify-between pt-4 text-base md:text-lg animate__animated animate__fadeInUp"
-    >
-      <div class="left">
+    <div class="flex flex-col">
+      <RubberBandHeader text="Skills" />
+      <div
+        class="flex flex-col pt-4 text-base md:text-lg animate__animated animate__fadeInUp"
+      >
         <div class="text-xl font-bold">Software Engineering</div>
         <div>
           Communication, Teamwork, Problem-solving, Agile software development,
-          DevOps, CI/CD, Software architecture design, Databse design, System
-          monitoring.
+          Project management, DevOps, CI/CD, Software architecture design,
+          Databse design, System monitoring.
         </div>
 
         <div class="mt-4 text-xl font-bold">Programming</div>
@@ -26,10 +25,9 @@
           Chinese (native), Japanese (conversational), English (conversational)
         </div>
       </div>
-
-      <div class="right">
-        <div id="tagcloud" class="tagcloud hidden md:block"></div>
-      </div>
+    </div>
+    <div class="hidden lg:block">
+      <div id="tagcloud" class="tagcloud"></div>
     </div>
   </div>
 </template>
