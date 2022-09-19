@@ -1,27 +1,28 @@
 <template>
-  <Menu />
-  <TopMenu />
+  <div class="bg" @mousemove="updateBgPosition">
+    <Menu />
+    <TopMenu />
 
-  <div
-    class="flex flex-col items-center md:ml-64 mt-16 md:mt-0 md:w-[calc(100%-16rem)]"
-  >
-    <full-page
-      ref="fullpage"
-      :options="options"
-      id="fullpage"
-      class="w-full max-w-7xl"
+    <div
+      class="flex flex-col items-center md:ml-64 mt-16 md:mt-0 md:w-[calc(100%-16rem)]"
     >
-      <div class="section"><About /></div>
-      <div class="section"><Skills /></div>
-      <div class="section"><Timeline /></div>
-      <div class="section"><Activity /></div>
-    </full-page>
+      <full-page
+        ref="fullpage"
+        :options="options"
+        id="fullpage"
+        class="w-full max-w-7xl"
+      >
+        <div class="section"><About /></div>
+        <div class="section"><Skills /></div>
+        <div class="section"><Timeline /></div>
+        <div class="section"><Activity /></div>
+      </full-page>
+    </div>
   </div>
-
-  <div class="bg"></div>
 </template>
 
 <script setup>
+import { ref, reactive } from 'vue';
 import About from './components/About.vue';
 import Menu from './components/Menu.vue';
 import Skills from './components/Skills.vue';
@@ -34,6 +35,42 @@ const options = {
   menu: '#menu',
   anchors: ['about', 'skills', 'timeline', 'activity'],
 };
+
+// Reactive background image
+const movementStrength = 20;
+const height = movementStrength / window.innerHeight;
+const width = movementStrength / window.innerWidth;
+const bgPosition = reactive({
+  x: '-50px',
+  y: '0px',
+});
+
+const updateBgPosition = (event) => {
+  // TODO: 移动端上关闭移动背景功能
+  if (false) {
+    return;
+  }
+
+  const pageX = event.pageX - window.innerWidth / 2;
+  const pageY = event.pageY - window.innerHeight / 2;
+  bgPosition.x = `${width * pageX * -1 - 50}px`;
+  bgPosition.y = `${height * pageY * -1}px`;
+};
 </script>
 
-<style scoped></style>
+<style scoped>
+.bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(./assets/bg-about.jpg);
+  background-size: cover;
+  background-position-x: v-bind('bgPosition.x');
+  background-position-y: v-bind('bgPosition.y');
+  filter: grayscale(78%) blur(0px) brightness(50%);
+  z-index: -1;
+}
+</style>

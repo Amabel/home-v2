@@ -69,12 +69,12 @@ onMounted(() => {
 
 <style scoped>
 .tagcloud {
-  background: rgba(0, 0, 0, 0.22);
+  background: rgba(0, 0, 0, 0.42);
   border-radius: 50%;
 }
 
 :deep() .tagcloud--item {
   color: #c3f8ff;
-  font-weight: bold;
+  font-weight: 900;
 }
 </style>
