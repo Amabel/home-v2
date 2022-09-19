@@ -59,8 +59,8 @@
             >
           </div>
           <div class="nav-item">
-            <span class="link-text" data-menuanchor="work"
-              ><a href="#work">Work</a></span
+            <span class="link-text" data-menuanchor="timeline"
+              ><a href="#timeline">Timeline</a></span
             >
           </div>
           <div class="nav-item">

@@ -13,7 +13,7 @@
     >
       <div class="section"><About /></div>
       <div class="section"><Skills /></div>
-      <div class="section"><Work /></div>
+      <div class="section"><Timeline /></div>
       <div class="section"><Activity /></div>
     </full-page>
   </div>
@@ -25,14 +25,14 @@
 import About from './components/About.vue';
 import Menu from './components/Menu.vue';
 import Skills from './components/Skills.vue';
-import Work from './components/Work.vue';
+import Timeline from './components/Timeline.vue';
 import Activity from './components/Activity.vue';
 import TopMenu from './components/TopMenu.vue';
 
 const options = {
   licenseKey: 'YOUR_KEY_HEERE',
   menu: '#menu',
-  anchors: ['about', 'skills', 'work', 'activity'],
+  anchors: ['about', 'skills', 'timeline', 'activity'],
 };
 </script>
 
