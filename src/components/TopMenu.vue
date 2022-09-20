@@ -50,7 +50,7 @@
         <nav id="menu">
           <div class="nav-item">
             <span class="link-text" data-menuanchor="about"
-              ><a href="#about">About</a></span
+              ><a href="#bio">Bio</a></span
             >
           </div>
           <div class="nav-item">

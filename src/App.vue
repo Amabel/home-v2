@@ -8,7 +8,7 @@
     >
       <full-page ref="fullpage" :options="options" id="fullpage">
         <div class="section">
-          <About />
+          <Bio />
         </div>
         <div class="section">
           <Skills />
@@ -26,7 +26,7 @@
 
 <script setup>
 import { ref, reactive, watch } from 'vue';
-import About from './components/About.vue';
+import Bio from './components/Bio.vue';
 import Menu from './components/Menu.vue';
 import Skills from './components/Skills.vue';
 import Timeline from './components/Timeline.vue';
@@ -37,7 +37,7 @@ import { darkMode } from './store';
 const options = {
   licenseKey: 'YOUR_KEY_HEERE',
   menu: '#menu',
-  anchors: ['about', 'skills', 'timeline', 'activity'],
+  anchors: ['bio', 'skills', 'timeline', 'activity'],
 };
 
 // Reactive background image
