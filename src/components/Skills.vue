@@ -8,21 +8,27 @@
       <div
         class="flex flex-col mt-4 md:mt-8 text-base md:text-lg animate__animated animate__fadeInUp"
       >
-        <div class="text-xl font-bold">Software Engineering</div>
-        <div>
-          Communication, Teamwork, Problem-solving, Agile software development,
-          Project management, DevOps, CI/CD, Software architecture design,
-          Databse design, System monitoring.
+        <div class="text-base md:text-xl font-bold">Software Engineering</div>
+        <div class="text-sm md:text-base">
+          Communication, Teamwork, Problem solving, Agile software development,
+          Project management, Software architecture design, Databse design,
+          System monitoring, Code review, Software documentation, DevOps, CI/CD
         </div>
 
-        <div class="mt-4 text-xl font-bold">Programming</div>
-        <div>Frontend: Angular, Vue.js, React, TypeScript</div>
-        <div>Backend: Ruby on Rails, Node.js, Go</div>
-        <div>Database: MySQL, Redis, PostgreSQL</div>
-        <div>Cloud: AWS, GCP, Firebase</div>
+        <div class="mt-4 text-base md:text-xl font-bold">Programming</div>
+        <div class="text-sm md:text-base">
+          Frontend: Angular, Vue.js, React, TypeScript
+        </div>
+        <div class="text-sm md:text-base">
+          Backend: Ruby on Rails, Node.js, Go
+        </div>
+        <div class="text-sm md:text-base">
+          Database: MySQL, Redis, PostgreSQL
+        </div>
+        <div class="text-sm md:text-base">Cloud: AWS, GCP, Firebase</div>
 
-        <div class="mt-4 text-xl font-bold">Language</div>
-        <div>
+        <div class="mt-4 text-base md:text-xl font-bold">Language</div>
+        <div class="text-sm md:text-base">
           Chinese (native), Japanese (conversational), English (conversational)
         </div>
       </div>
