@@ -2,7 +2,6 @@
   <div
     class="flex justify-center items-center p-12 w-full h-[calc(100%-4rem)] md:h-screen"
   >
-    <!-- <div class="wrapper flex" :class="{ light: !darkMode }"> -->
     <div class="flex flex-col">
       <RubberBandHeader text="Skills" />
       <div
@@ -34,9 +33,8 @@
       </div>
     </div>
     <div class="hidden lg:block">
-      <div id="tagcloud" class="tagcloud" :class="{ light: !darkMode }"></div>
+      <div id="tagcloud" class="tagcloud"></div>
     </div>
-    <!-- </div> -->
   </div>
 </template>
 
@@ -44,7 +42,6 @@
 import RubberBandHeader from './RubberBandHeader.vue';
 import * as TagCloud from 'TagCloud';
 import { onMounted } from 'vue';
-import { darkMode } from '../store';
 
 const container = '#tagcloud';
 const texts = [
@@ -77,20 +74,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-/* .wrapper {
-  @apply p-12;
-  border-radius: 24px;
-  background: transparent;
-  transition: background 2s;
-} */
-
-/* .wrapper.light {
-  background: rgba(0, 0, 0, 0.42);
-  transition: background 2s;
-} */
-
 .tagcloud {
-  /* background: rgba(0, 0, 0, 0.42); */
   border-radius: 50%;
   transition: background 2s;
 }
