@@ -9,9 +9,10 @@
           class="mt-4 md:mt-12 text-sm md:text-lg max-w-2xl animate__animated animate__fadeInUp"
         >
           <div>
-            Weibin Luo is a full-stack engineer with four years of experience in
-            software development, including requirements analysis, architecture
-            design, programming, operations, and maintenance.
+            <FlipText main-text="Weibin Luo" sub-text="Amabel" /> is a
+            full-stack engineer with four years of experience in software
+            development, including requirements analysis, architecture design,
+            programming, operations, and maintenance.
           </div>
 
           <div class="mt-2 md:mt-4">
@@ -22,8 +23,9 @@
           </div>
 
           <div class="mt-2 md:mt-4">
-            Weibin Luo has a passion for cutting-edge programming languages. He
-            likes to contribute to OSS and build his projects in his free time.
+            <FlipText main-text="Weibin Luo" sub-text="Amabel" /> has a passion
+            for cutting-edge programming languages. He likes to contribute to
+            OSS and build his projects in his free time.
           </div>
         </div>
       </div>
@@ -34,6 +36,7 @@
 
 <script setup>
 import RubberBandHeader from './RubberBandHeader.vue';
+import FlipText from './FlipText.vue';
 </script>
 
 <style scoped></style>
