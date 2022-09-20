@@ -14,7 +14,7 @@
           <Skills />
         </div>
         <div class="section">
-          <Timeline />
+          <MyTimeline />
         </div>
         <div class="section">
           <Activity />
@@ -29,7 +29,7 @@ import { ref, reactive, watch } from 'vue';
 import Bio from './components/Bio.vue';
 import Menu from './components/Menu.vue';
 import Skills from './components/Skills.vue';
-import Timeline from './components/Timeline.vue';
+import MyTimeline from './components/MyTimeline.vue';
 import Activity from './components/Activity.vue';
 import TopMenu from './components/TopMenu.vue';
 import { darkMode } from './store';
