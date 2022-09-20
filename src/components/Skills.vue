@@ -40,7 +40,7 @@
 
 <script setup>
 import RubberBandHeader from './RubberBandHeader.vue';
-import * as TagCloud from 'TagCloud';
+import TagCloud from 'TagCloud';
 import { onMounted } from 'vue';
 
 const container = '#tagcloud';
