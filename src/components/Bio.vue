@@ -9,22 +9,21 @@
           class="mt-4 md:mt-12 text-sm md:text-lg max-w-2xl animate__animated animate__fadeInUp"
         >
           <div>
-            Weibin Luo, a full-stack engineer with 4 years' experience in
+            Weibin Luo is a full-stack engineer with four years of experience in
             software development, including requirements analysis, architecture
-            design, programming, operations and maintenance.
+            design, programming, operations, and maintenance.
           </div>
 
           <div class="mt-2 md:mt-4">
-            As a developer, he is expert in frontend and backend development,
-            cloud architecture, system availability and code maintainability. As
-            a team leader, he focues on project management, code review,
-            knowledge sharing and pair programming.
+            As a developer, he is good at frontend and backend development,
+            cloud architecture, system availability, and code maintainability.
+            As a team leader, he focuses on project management, code review,
+            knowledge sharing, and pair programming.
           </div>
 
           <div class="mt-2 md:mt-4">
-            Weibin Luo has a passion for cutting edge programming languages. In
-            his free time, he likes to contribute to OSS and build his own
-            projects.
+            Weibin Luo has a passion for cutting-edge programming languages. He
+            likes to contribute to OSS and build his projects in his free time.
           </div>
         </div>
       </div>
