@@ -2,7 +2,7 @@
   <div
     class="flex justify-center items-center p-12 w-full h-[calc(100%-4rem)] md:h-screen"
   >
-    <div class="flex flex-col">
+    <div class="flex flex-col max-w-2xl">
       <RubberBandHeader text="Skills" />
       <div
         class="flex flex-col mt-4 md:mt-8 text-base md:text-lg animate__animated animate__fadeInUp"
