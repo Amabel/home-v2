@@ -7,7 +7,7 @@
 
       <nav id="menu" class="mt-16">
         <div class="nav-item">
-          <span class="link-text" data-menuanchor="about"
+          <span class="link-text" data-menuanchor="bio"
             ><a href="#bio">Bio</a></span
           >
         </div>
