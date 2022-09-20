@@ -16,7 +16,6 @@
 import { darkMode } from '../store';
 
 const toggleTheme = ($event) => {
-  console.log('dark mode: ' + $event.target.checked);
   darkMode.value = $event.target.checked;
 };
 </script>
