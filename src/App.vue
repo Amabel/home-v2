@@ -1,5 +1,5 @@
 <template>
-  <div class="bg" @mousemove="updateBgPosition">
+  <div class="bg" v-on="canHover ? { mousemove: updateBgPosition } : {}">
     <Menu />
     <TopMenu />
 
@@ -49,12 +49,9 @@ const bgPosition = reactive({
   y: '0px',
 });
 
+// Disable background image movement on non-hover devices
+const canHover = window.matchMedia('(any-hover:hover)').matches;
 const updateBgPosition = (event) => {
-  // TODO: 移动端上关闭移动背景功能
-  if (false) {
-    return;
-  }
-
   const pageX = event.pageX - window.innerWidth / 2;
   const pageY = event.pageY - window.innerHeight / 2;
   bgPosition.x = `${width * pageX * -1 - 50}px`;
