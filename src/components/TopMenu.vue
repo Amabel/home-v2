@@ -8,7 +8,7 @@
     </div>
 
     <div class="right flex items-center">
-      <a href="https://github.com/Amabel" target="_blank">
+      <a href="https://github.com/Amabel/home-v2" target="_blank">
         <svg
           class="logo github w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
