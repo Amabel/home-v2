@@ -43,7 +43,7 @@
       </div>
 
       <div
-        class="dropdown"
+        class="dropdown pb-4"
         :class="{ inactive: !submenuActive }"
         v-click-outside="closeDropdown"
       >
@@ -68,6 +68,12 @@
               ><a href="#activity">Activity</a></span
             >
           </div>
+
+          <div class="nav-item mt-4">
+            <div class="scale-[0.65]">
+              <ThemeToggle />
+            </div>
+          </div>
         </nav>
       </div>
     </div>
@@ -78,6 +84,7 @@
 import { ref } from '@vue/reactivity';
 import Avatar from './Avatar.vue';
 import Hamburger from './Hamburger.vue';
+import ThemeToggle from './ThemeToggle.vue';
 
 const submenuActive = ref(false);
 const toggleSubmenu = (open) => {

@@ -5,7 +5,7 @@
       name="onoffswitch"
       class="onoffswitch-checkbox input-dark"
       id="myonoffswitch"
-      checked
+      :checked="darkMode"
       @change="toggleTheme"
     />
     <label class="onoffswitch-label" for="myonoffswitch"></label>
