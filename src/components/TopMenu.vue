@@ -44,7 +44,7 @@
 
       <div
         class="dropdown pb-4"
-        :class="{ inactive: !submenuActive }"
+        :class="{ hidden: dropdownHidden, inactive: !submenuActive }"
         v-click-outside="closeDropdown"
       >
         <nav id="menu">
@@ -81,14 +81,15 @@
 </template>
 
 <script setup>
-import { ref } from '@vue/reactivity';
+import { ref, nextTick } from 'vue';
 import Avatar from './Avatar.vue';
 import Hamburger from './Hamburger.vue';
 import ThemeToggle from './ThemeToggle.vue';
 
 const submenuActive = ref(false);
+const dropdownHidden = ref(true);
 const toggleSubmenu = (open) => {
-  submenuActive.value = open;
+  open ? openMenu() : closeMenu();
 };
 
 const closeDropdown = (event) => {
@@ -98,7 +99,26 @@ const closeDropdown = (event) => {
     return;
   }
 
+  closeMenu();
+};
+
+const openMenu = async () => {
+  dropdownHidden.value = false;
+  // NOTE: 打开菜单时，同时删除hidden和inactive class会导致菜单瞬间出现
+  // 因此把删除inactive class的操作放到macrotask队列中
+  await nextTick();
+  setTimeout(() => {
+    submenuActive.value = true;
+  });
+};
+
+const closeMenu = async () => {
   submenuActive.value = false;
+  await nextTick();
+  // NOTE: 配合动画效果延迟1秒后隐藏
+  setTimeout(() => {
+    dropdownHidden.value = true;
+  }, 1000);
 };
 </script>
 
@@ -130,7 +150,7 @@ const closeDropdown = (event) => {
   top: 0;
   right: 0px;
   margin-top: 64px;
-  width: 176px;
+  width: 196px;
   background-color: rgba(20, 21, 33, 0.95);
   border-bottom-left-radius: 24px;
   opacity: 1;
