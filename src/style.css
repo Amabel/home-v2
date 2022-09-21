@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #c3f8ff;
+  --bg-color: #141521;
 
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -12,7 +13,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 1);
-  background-color: #141521;
+  background-color: var(--bg-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

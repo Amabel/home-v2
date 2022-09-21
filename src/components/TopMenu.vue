@@ -100,7 +100,7 @@ const closeDropdown = (event) => {
   position: fixed;
   top: 0;
   left: 0;
-  background: #141521;
+  background: var(--bg-color);
   z-index: 10;
 }
 

@@ -8,7 +8,7 @@
         <div
           class="mt-4 md:mt-12 md:ml-12 max-w-2xl text-base md:text-lg animate__animated animate__fadeInUp"
         >
-          <Timeline background="#141521">
+          <Timeline background="var(--bg-color)">
             <timeline-title
               bg-color="var(--primary-color)"
               font-color="#ffffff"
