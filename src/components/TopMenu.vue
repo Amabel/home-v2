@@ -124,7 +124,7 @@ const closeDropdown = (event) => {
   right: 0px;
   margin-top: 64px;
   width: 176px;
-  background-color: rgba(0, 0, 0, 0.87);
+  background-color: rgba(20, 21, 33, 0.95);
   border-bottom-left-radius: 24px;
   opacity: 1;
   transition: opacity 1s;
