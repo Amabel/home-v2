@@ -28,7 +28,7 @@ const props = defineProps({
 .animate span::after {
   content: '';
   position: absolute;
-  bottom: 8px;
+  bottom: 28%;
   left: 0;
   width: 100%;
   height: 6px;
