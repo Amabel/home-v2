@@ -93,9 +93,19 @@ const toggleSubmenu = (open) => {
 };
 
 const closeDropdown = (event) => {
-  // NOTE: 点击menu按钮的情况除外，否则会导致多次触发
+  if (!submenuActive.value) {
+    return;
+  }
+
+  // NOTE: 点击hamburger按钮的情况除外，否则会导致多次触发
+  // NOTE: 点击themeToggle按钮的情况除外，否则会导致意外关闭
+  // （可能是由于v-click-outside将子组件判定为外部区域）
   const className = event.target.className;
-  if (className && className.includes('hamburger-area')) {
+  if (
+    className &&
+    (className.includes('hamburger-area') ||
+      className.includes('onoffswitch-checkbox'))
+  ) {
     return;
   }
 
