@@ -85,7 +85,12 @@ import ThemeToggle from './ThemeToggle.vue';
 
 .link-text {
   position: relative;
-  background: linear-gradient(to right, #c3f8ff, #c3f8ff 50%, #ffffffde 50%);
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color) 50%,
+    #ffffffde 50%
+  );
   background-size: 200% 100%;
   background-position: 100%;
   -webkit-background-clip: text;
@@ -96,7 +101,7 @@ import ThemeToggle from './ThemeToggle.vue';
 }
 
 .link-text.active {
-  color: #c3f8ff;
+  color: var(--primary-color);
   -webkit-text-fill-color: unset;
 }
 
@@ -106,7 +111,7 @@ import ThemeToggle from './ThemeToggle.vue';
   width: 100%;
   height: 2px;
   border-radius: 0px;
-  background-color: #c3f8ff;
+  background-color: var(--primary-color);
   bottom: 0px;
   left: 0;
   transform-origin: right;
@@ -133,7 +138,7 @@ import ThemeToggle from './ThemeToggle.vue';
 }
 
 .footer .logo.github:hover .cls-1 {
-  fill: #c3f8ff;
+  fill: var(--primary-color);
 }
 
 .footer .logo.wantedly .cls-1 {
@@ -141,7 +146,7 @@ import ThemeToggle from './ThemeToggle.vue';
 }
 
 .footer .logo.wantedly:hover .cls-2 {
-  fill: #c3f8ff;
+  fill: var(--primary-color);
 }
 
 .divider {

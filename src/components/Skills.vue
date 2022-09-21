@@ -84,7 +84,7 @@ onMounted(() => {
 }
 
 :deep() .tagcloud--item {
-  color: #c3f8ff;
+  color: var(--primary-color);
   font-weight: 900;
 }
 </style>

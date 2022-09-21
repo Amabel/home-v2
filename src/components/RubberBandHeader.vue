@@ -2,7 +2,7 @@
   <div class="flex flex-row">
     <div v-for="(charMap, index) in headerCharsMap" :key="index">
       <div
-        class="header-chars text-4xl md:text-6xl font-black text-[#C3F8FF]"
+        class="header-chars text-4xl md:text-6xl font-black text-[color:var(--primary-color)]"
         :class="{
           'animate__animated animate__rubberBand': charMap.animating,
         }"

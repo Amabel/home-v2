@@ -62,6 +62,6 @@ const props = defineProps({
 
 .animate span:hover::before,
 .animate span:focus::before {
-  color: #c3f8ff;
+  color: var(--primary-color);
 }
 </style>

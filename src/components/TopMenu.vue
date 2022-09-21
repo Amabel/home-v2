@@ -146,6 +146,6 @@ const closeDropdown = (event) => {
 }
 
 .dropdown .nav-item .link-text.active {
-  color: #c3f8ff;
+  color: var(--primary-color);
 }
 </style>

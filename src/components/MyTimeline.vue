@@ -9,16 +9,19 @@
           class="mt-4 md:mt-12 md:ml-12 max-w-2xl text-base md:text-lg animate__animated animate__fadeInUp"
         >
           <Timeline background="#141521">
-            <timeline-title bg-color="#c3f8ff" font-color="#ffffff">
+            <timeline-title
+              bg-color="var(--primary-color)"
+              font-color="#ffffff"
+            >
               {{ year }}
             </timeline-title>
-            <timeline-item bg-color="#c3f8ff" font-color="#ffffff">
+            <timeline-item bg-color="var(--primary-color)" font-color="#ffffff">
               <div class="tl-body">playground Co., Ltd. (2019)</div>
               <div class="text-xs md:text-lg">System engineer</div>
             </timeline-item>
 
             <timeline-item
-              bg-color="#c3f8ff"
+              bg-color="var(--primary-color)"
               font-color="#ffffff"
               :hollow="true"
             >
@@ -29,7 +32,7 @@
             </timeline-item>
 
             <timeline-item
-              bg-color="#c3f8ff"
+              bg-color="var(--primary-color)"
               font-color="#ffffff"
               :hollow="true"
             >
@@ -38,7 +41,7 @@
             </timeline-item>
 
             <timeline-item
-              bg-color="#c3f8ff"
+              bg-color="var(--primary-color)"
               font-color="#ffffff"
               :hollow="true"
             >
