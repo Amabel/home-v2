@@ -112,11 +112,13 @@ const closeDropdown = (event) => {
   closeMenu();
 };
 
+let timer = null;
 const openMenu = async () => {
   dropdownHidden.value = false;
   // NOTE: 打开菜单时，同时删除hidden和inactive class会导致菜单瞬间出现
   // 因此把删除inactive class的操作放到macrotask队列中
   await nextTick();
+  timer && clearTimeout(timer);
   setTimeout(() => {
     submenuActive.value = true;
   });
@@ -125,8 +127,9 @@ const openMenu = async () => {
 const closeMenu = async () => {
   submenuActive.value = false;
   await nextTick();
+  timer && clearTimeout(timer);
   // NOTE: 配合动画效果延迟1秒后隐藏
-  setTimeout(() => {
+  timer = setTimeout(() => {
     dropdownHidden.value = true;
   }, 1000);
 };
