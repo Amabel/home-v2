@@ -10,6 +10,7 @@ The source code of [Amabel's Profile](https://amabel.dev/) website. The code is 
 - [TagCloud.js](https://github.com/cong-min/TagCloud)
 - [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)
 - [Animate.css](https://github.com/animate-css/animate.css)
+- <a href="https://www.vecteezy.com/free-vector/cyber-network">Cyber Network Vectors by Vecteezy</a> (Background image)
 
 ## License
 
