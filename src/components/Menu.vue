@@ -28,7 +28,7 @@
         </div>
       </nav>
 
-      <div class="mt-8">
+      <div class="mt-8 scale-[0.75]">
         <ThemeToggle />
       </div>
 
