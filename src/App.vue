@@ -59,9 +59,11 @@ const updateBgPosition = (event) => {
 };
 
 // Dark mode
-const bgFilter = ref('grayscale(78%) blur(0px) brightness(50%)');
-watch(darkMode, (d) => {
-  bgFilter.value = d ? 'grayscale(78%) blur(0px) brightness(50%)' : 'none';
+const bgFilter = ref(
+  darkMode.value ? 'grayscale(78%) brightness(50%)' : 'none',
+);
+watch(darkMode, (dark) => {
+  bgFilter.value = dark ? 'grayscale(78%) brightness(50%)' : 'none';
 });
 </script>
 
