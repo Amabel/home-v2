@@ -1,11 +1,11 @@
 <template>
   <div class="nav hidden md:inline-flex justify-between w-64 h-screen">
-    <div class="flex flex-col items-center pt-8 pb-16 w-full">
+    <div class="nav-wrapper flex flex-col items-center pt-8 pb-16 w-full">
       <Avatar />
       <div class="text-xl font-bold">Amabel</div>
       <div>Software Engineer</div>
 
-      <nav id="menu" class="mt-16">
+      <nav id="menu" class="menu-wrapper mt-8">
         <div class="nav-item">
           <span class="link-text" data-menuanchor="bio"
             ><a href="#bio">Bio</a></span
@@ -159,5 +159,23 @@ import ThemeToggle from './ThemeToggle.vue';
     rgba(195, 248, 255, 0.298) 23%,
     rgba(20, 21, 33, 0) 100%
   );
+}
+
+@media (max-height: 756px) {
+  .nav-wrapper {
+    @apply pt-4;
+  }
+
+  .manu-wrapper {
+    @apply mt-4;
+  }
+
+  .nav-item {
+    @apply p-2 text-base;
+  }
+
+  .footer {
+    @apply mt-12;
+  }
 }
 </style>
