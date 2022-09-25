@@ -3,7 +3,7 @@
     class="flex justify-center items-center w-full h-[calc(100%-4rem)] md:h-screen"
   >
     <div class="flex">
-      <div class="flex flex-col p-12 max-w-6xl">
+      <div class="flex flex-col px-12 pt-12 md:pt-0 max-w-6xl">
         <RubberBandHeader text="Activity" />
 
         <div class="mt-8 md:mt-12 animate__animated animate__fadeInUp">

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-center items-center p-12 w-full h-[calc(100%-4rem)] md:h-screen"
+    class="flex justify-center items-center px-12 pt-12 md:pt-0 w-full h-[calc(100%-4rem)] md:h-screen"
   >
     <div class="flex flex-col max-w-2xl">
       <RubberBandHeader text="Skills" />

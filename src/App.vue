@@ -55,7 +55,7 @@ const updateBgPosition = (event) => {
   const pageX = event.pageX - window.innerWidth / 2;
   const pageY = event.pageY - window.innerHeight / 2;
   bgPosition.x = `${width * pageX * -1 - 50}px`;
-  bgPosition.y = `${height * pageY * -1}px`;
+  bgPosition.y = `${height * pageY * -1 - 0}px`;
 };
 
 // Dark mode
@@ -76,7 +76,7 @@ watch(darkMode, (dark) => {
   width: 100vw;
   height: 100vh;
   background: url(./assets/bg-about.jpg);
-  background-size: cover;
+  background-size: 105%;
   background-position-x: v-bind('bgPosition.x');
   background-position-y: v-bind('bgPosition.y');
   filter: v-bind(bgFilter);

@@ -3,7 +3,7 @@
     class="flex justify-center items-center w-full h-[calc(100%-4rem)] md:h-screen"
   >
     <div class="flex">
-      <div class="flex flex-col p-12 max-w-6xl">
+      <div class="flex flex-col px-12 pt-12 md:pt-0 max-w-6xl">
         <RubberBandHeader text="Timeline" />
         <div
           class="mt-4 md:mt-12 md:ml-12 max-w-2xl text-base md:text-lg animate__animated animate__fadeInUp"
@@ -73,6 +73,12 @@ const year = new Date().getFullYear();
 @media screen(md) {
   .tl-body {
     @apply text-xl font-bold;
+  }
+}
+
+@media screen(md) and (max-height: 756px) {
+  .tl-body {
+    @apply text-base font-bold;
   }
 }
 </style>

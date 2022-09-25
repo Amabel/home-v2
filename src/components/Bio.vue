@@ -3,7 +3,7 @@
     class="main inline-flex justify-center items-center w-full h-[calc(100%-4rem)] md:h-screen"
   >
     <div class="flex">
-      <div class="flex flex-col p-12 max-w-6xl">
+      <div class="flex flex-col px-12 pt-12 md:pt-0 max-w-6xl">
         <RubberBandHeader text="Bio" />
         <div
           class="mt-4 md:mt-12 text-sm md:text-lg max-w-2xl animate__animated animate__fadeInUp"
