@@ -19,7 +19,7 @@
           Frontend: Angular, Vue.js, React, TypeScript
         </div>
         <div class="text-sm md:text-base">
-          Backend: Ruby on Rails, Node.js, Go
+          Backend: Spring, Java, Kotlin, Ruby on Rails, Node.js
         </div>
         <div class="text-sm md:text-base">
           Database: MySQL, Redis, PostgreSQL
@@ -45,6 +45,9 @@ import { onMounted } from 'vue';
 
 const container = '#tagcloud';
 const texts = [
+  'Kotlin',
+  'Java',
+  'Spring',
   'TypeScript',
   'JavaScript',
   'Angular',
@@ -54,7 +57,6 @@ const texts = [
   'Vue.js',
   'React',
   'Node.js',
-  'Go',
   'Python',
   'MySQL',
   'Redis',

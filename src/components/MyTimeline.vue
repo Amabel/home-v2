@@ -15,6 +15,12 @@
             >
               {{ year }}
             </timeline-title>
+
+            <timeline-item bg-color="var(--primary-color)" font-color="#ffffff">
+              <div class="tl-body">Simplex Inc.　(2023)</div>
+              <div class="text-xs md:text-lg">System engineer</div>
+            </timeline-item>
+
             <timeline-item bg-color="var(--primary-color)" font-color="#ffffff">
               <div class="tl-body">playground Co., Ltd. (2019)</div>
               <div class="text-xs md:text-lg">System engineer</div>
@@ -29,15 +35,6 @@
                 Master of Computer Science and Engineering, Waseda University,
                 Tokyo (2019)
               </div>
-            </timeline-item>
-
-            <timeline-item
-              bg-color="var(--primary-color)"
-              font-color="#ffffff"
-              :hollow="true"
-            >
-              <div class="tl-body">playground Co., Ltd. (2018)</div>
-              <div class="text-xs md:text-lg">Engineering internship</div>
             </timeline-item>
 
             <timeline-item
@@ -70,13 +67,13 @@ const year = new Date().getFullYear();
   @apply text-xs font-bold;
 }
 
-@media screen(md) {
+@media screen {
   .tl-body {
     @apply text-xl font-bold;
   }
 }
 
-@media screen(md) and (max-height: 756px) {
+@media screen and (max-height: 756px) {
   .tl-body {
     @apply text-base font-bold;
   }
